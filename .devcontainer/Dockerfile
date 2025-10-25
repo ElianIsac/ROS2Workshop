@@ -7,7 +7,15 @@ SHELL ["/bin/bash","-lc"]
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-colcon-common-extensions \
     ros-dev-tools \
-    ros-jazzy-turtlesim && \
+    ros-jazzy-turtlesim \
+    xvfb \
+    fluxbox \
+    websockify \
+    novnc \
+    x11vnc \
+    x11-utils \
+    feh \
+    xterm && \
     rm -rf /var/lib/apt/lists/*
 
 # Workspace
